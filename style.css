@@ -1,0 +1,99 @@
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease;
+}
+
+/* Style for the body to center the calculator */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg-color, rgb(24, 24, 24)); /* Default dark mode */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 1rem;
+  transition: background-color 0.5s ease;
+}
+
+/* Style for the calculator container */
+#calculator {
+  width: 100%;
+  max-width: 18rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: var(--calculator-bg-color, rgb(33, 33, 33));
+}
+
+/* Style for the display */
+#display {
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 100%;
+  color: var(--text-color, white);
+  font-size: 3rem;
+  font-weight: bold;
+  border: none;
+  background-color: var(--button-bg-color, rgb(24,24,24));
+  text-align: right;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+
+/* Style for rows of buttons */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* General button styles */
+.btn {
+  background-color: var(--button-bg-color, rgb(24,24,24));
+  color: var(--text-color, white);
+  height: 4rem;
+  width: 4rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0.25rem;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* Special operator button styles */
+.dark-mode-btn, .equal {
+  width: 8.5rem;
+  border-radius: 0.5rem;
+}
+.equal{
+  font-size: 2.5rem;
+}
+
+/* Light mode styles */
+.light-mode {
+  --bg-color: white;
+  --text-color: black;
+  --calculator-bg-color: rgb(200, 200, 200);
+  --button-bg-color: rgb(230, 230, 230);
+  --display-bg-color: rgb(24,24,24)
+}
+
+/* Dark mode styles */
+.dark-mode {
+  --bg-color: rgb(24, 24, 24); /* Default dark mode */
+  --text-color: white;
+  --calculator-bg-color: rgb(33, 33, 33);
+  --button-bg-color: rgb(24,24,24);
+}
+
+/* Accent color theme */
+.accent {
+  color: #FF8C00; /* Dark Orange */
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main>
+        <div id="calculator">
+            <input type="text" id="display" readonly />
+            <div id="keys">
+                <!-- First row of buttons -->
+                <section class="row">
+                    <button class="btn accent" onclick="clearDisplay()">AC</button>
+                    <button class="btn accent" onclick="delChar()">DE</button>
+                    <button class="btn" onclick="appendDisplay('√(')">√</button>
+                    <button class="btn" onclick="insertBracket()">()</button>
+                </section>
+                <!-- Second row of buttons -->
+                <section class="row">
+                    <button class="btn" onclick="appendDisplay('7')">7</button>
+                    <button class="btn" onclick="appendDisplay('8')">8</button>
+                    <button class="btn" onclick="appendDisplay('9')">9</button>
+                    <button class="btn" onclick="appendDisplay('÷')">÷</button>
+                </section>
+                <!-- Third row of buttons -->
+                <section class="row">
+                    <button class="btn" onclick="appendDisplay('4')">4</button>
+                    <button class="btn" onclick="appendDisplay('5')">5</button>
+                    <button class="btn" onclick="appendDisplay('6')">6</button>
+                    <button class="btn" onclick="appendDisplay('x')">x</button>
+                </section>
+                <!-- Fourth row of buttons -->
+                <section class="row">
+                    <button class="btn" onclick="appendDisplay('1')">1</button>
+                    <button class="btn" onclick="appendDisplay('2')">2</button>
+                    <button class="btn" onclick="appendDisplay('3')">3</button>
+                    <button class="btn" onclick="appendDisplay('-')">-</button>
+                </section>
+                <!-- Fifth row of buttons -->
+                <section class="row">
+                    <button class="btn" onclick="appendDisplay('00')">00</button>
+                    <button class="btn" onclick="appendDisplay('0')">0</button>
+                    <button class="btn" onclick="appendDisplay('.')">.</button>
+                    <button class="btn" onclick="appendDisplay('+')">+</button>
+                </section>
+                <section class="row">
+                    <button class="btn dark-mode-btn" onclick="toggleDarkMode()">Light</button>
+                    <button class="btn equal accent" onclick="calculate()">=</button>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
