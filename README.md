@@ -7,7 +7,6 @@ It supports basic arithmetic, square roots, parentheses, and includes dark/light
 
 ## 📸 Preview
 
-> *(Add a screenshot named `preview.png` in the repo to show here)*
 > ![Calculator Preview](preview.png)
 
 ---
